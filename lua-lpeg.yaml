@@ -1,4 +1,5 @@
-version_control: NA
-src_repo: "http://www.inf.puc-rio.br/~roberto/lpeg/#download" 
-tag_prefix: NA 
-seperator: NA 
+git_url: https://salsa.debian.org/lua-team/lua-lpeg.git
+version_control: git
+src_repo: https://salsa.debian.org/lua-team/lua-lpeg.git
+tag_prefix: "upstream/" 
+seperator: .
