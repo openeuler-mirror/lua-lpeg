@@ -2,11 +2,12 @@
 
 Name:    lua-%{mod_name}
 Version: 1.0.2
-Release: 2
+Release: 3
 Summary: Parsing Expression Grammars For Lua
 License: MIT
 URL:     http://www.inf.puc-rio.br/~roberto/lpeg/
 Source0: http://www.inf.puc-rio.br/~roberto/lpeg/lpeg-%{version}.tar.gz
+Patch0:  lua-lpeg-fix-cc.patch
 
 BuildRequires: gcc, lua-devel
 Requires: lua, lua(abi)
@@ -58,6 +59,9 @@ make test
 %{lua_pkgdir}/*
 
 %changelog
+* Wed Apr 19 2023 Xiaoya Huang <huangxiaoya@iscas.ac.cn> - 1.0.2-3
+- Fix CC compiler support
+
 * Sat Sep 21 2019 openEuler Buildteam <buildteam@openeuler.org> - 1.0.2-2
 - Modify spec error information
 
